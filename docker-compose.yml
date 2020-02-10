@@ -24,7 +24,7 @@ services:
       - DRONE_LOGS_COLOR=true
     env_file: .env
 
-  drone-runner-docker:
+  drone-agent:
     container_name: drone_agent
     image: drone/agent:1
     restart: unless-stopped
